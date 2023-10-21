@@ -1,0 +1,53 @@
+import { requireAuth, withAuth } from '../api';
+import { clerkClient } from '../server';
+export * from '../api';
+export { clerkClient };
+export declare const clerkApi: {
+    __unstable_options: {
+        apiKey?: string | undefined;
+        secretKey?: string | undefined;
+        apiUrl?: string | undefined;
+        apiVersion?: string | undefined;
+        userAgent?: string | undefined;
+        httpOptions?: RequestInit | undefined;
+        proxyUrl?: string | undefined;
+        publishableKey?: string | undefined;
+        isSatellite?: boolean | undefined;
+        domain?: string | undefined;
+        audience?: string | string[] | undefined;
+        jwtKey?: string | undefined;
+    };
+    authenticateRequest: ({ apiKey: runtimeApiKey, secretKey: runtimeSecretKey, audience: runtimeAudience, frontendApi: runtimeFrontendApi, proxyUrl: runtimeProxyUrl, publishableKey: runtimePublishableKey, jwtKey: runtimeJwtKey, isSatellite: runtimeIsSatellite, domain: runtimeDomain, searchParams, ...rest }: Omit<import("@clerk/backend/dist/types/tokens/request").AuthenticateRequestOptions, "apiUrl" | "apiVersion">) => Promise<import("@clerk/backend/dist/types/tokens/authStatus").RequestState>;
+    localInterstitial: ({ frontendApi: runtimeFrontendApi, publishableKey: runtimePublishableKey, proxyUrl: runtimeProxyUrl, isSatellite: runtimeIsSatellite, domain: runtimeDomain, ...rest }: Omit<import("@clerk/backend/dist/types/tokens/interstitial").LoadInterstitialOptions, "apiUrl">) => string;
+    remotePublicInterstitial: ({ frontendApi: runtimeFrontendApi, publishableKey: runtimePublishableKey, proxyUrl: runtimeProxyUrl, isSatellite: runtimeIsSatellite, domain: runtimeDomain, userAgent: runtimeUserAgent, ...rest }: import("@clerk/backend/dist/types/tokens/interstitial").LoadInterstitialOptions) => Promise<string>;
+    remotePrivateInterstitial: () => Promise<string>;
+    remotePublicInterstitialUrl: typeof import("@clerk/backend/dist/types/tokens/interstitial").buildPublicInterstitialUrl;
+    debugRequestState: (params: import("@clerk/backend/dist/types/tokens/authStatus").RequestState) => {
+        frontendApi: string;
+        isSignedIn: boolean;
+        proxyUrl: string | undefined;
+        isInterstitial: boolean;
+        reason: import("@clerk/backend/dist/types/tokens/authStatus").AuthReason | null;
+        message: string | null;
+        publishableKey: string;
+        isSatellite: boolean;
+        domain: string;
+    };
+    allowlistIdentifiers: import("@clerk/backend/dist/types/api/endpoints").AllowlistIdentifierAPI;
+    clients: import("@clerk/backend/dist/types/api/endpoints").ClientAPI;
+    emailAddresses: import("@clerk/backend/dist/types/api/endpoints").EmailAddressAPI;
+    emails: import("@clerk/backend/dist/types/api/endpoints").EmailAPI;
+    interstitial: import("@clerk/backend/dist/types/api/endpoints").InterstitialAPI;
+    invitations: import("@clerk/backend/dist/types/api/endpoints").InvitationAPI;
+    organizations: import("@clerk/backend/dist/types/api/endpoints").OrganizationAPI;
+    phoneNumbers: import("@clerk/backend/dist/types/api/endpoints").PhoneNumberAPI;
+    redirectUrls: import("@clerk/backend/dist/types/api/endpoints").RedirectUrlAPI;
+    sessions: import("@clerk/backend/dist/types/api/endpoints").SessionAPI;
+    signInTokens: import("@clerk/backend/dist/types/api/endpoints").SignInTokenAPI;
+    smsMessages: import("@clerk/backend/dist/types/api/endpoints").SMSMessageAPI;
+    users: import("@clerk/backend/dist/types/api/endpoints").UserAPI;
+    domains: import("@clerk/backend/dist/types/api/endpoints").DomainAPI;
+};
+export declare const requireEdgeMiddlewareAuth: typeof requireAuth;
+export declare const withEdgeMiddlewareAuth: typeof withAuth;
+//# sourceMappingURL=index.d.ts.map

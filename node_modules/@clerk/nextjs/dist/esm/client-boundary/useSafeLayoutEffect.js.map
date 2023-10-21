@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../src/client-boundary/useSafeLayoutEffect.tsx"],"sourcesContent":["import React from 'react';\n\n// TODO: Import from shared once [JS-118] is done\nexport const useSafeLayoutEffect = typeof window !== 'undefined' ? React.useLayoutEffect : React.useEffect;\n"],"mappings":"AAAA,OAAO,WAAW;AAGX,MAAM,sBAAsB,OAAO,WAAW,cAAc,MAAM,kBAAkB,MAAM;","names":[]}
