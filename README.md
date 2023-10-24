@@ -65,6 +65,6 @@ You can also use the settings icon on the top right corner of the chat window to
 
 ## Conclusion
 
-In this blog post, I showed you how to create your own Azure OpenAI platform using the chatgpt-aoai GitHub repository. You learned how to clone the repository, install the dependencies, configure the environment variables, and run the chat application. You also learned how to interact with GPT-3 and adjust some parameters for text generation.
+In this blog post, I showed you how to create your own Azure OpenAI platform using the chatgpt-aoai GitHub repository. You learned how to clone the repository, install the dependencies, configure the environment variables, and run the chat application. You also learned how to interact with GPT-4 and adjust some parameters for text generation.
 
 I hope you enjoyed this tutorial and found it useful. If you want to learn more about Azure OpenAI and how to use it for various AI scenarios. contact kingovlee@gmail.com
